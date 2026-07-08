@@ -1,0 +1,62 @@
+[
+ {
+  "cell": "env_v4_evolved_bank",
+  "val_acc": 0.9922,
+  "warm_val": 0.99,
+  "t": 161.7
+ },
+ {
+  "cell": "env_v2_built_stats_only",
+  "val_acc": 0.978,
+  "warm_val": 0.9196,
+  "t": 96.0
+ },
+ {
+  "cell": "bank_relu_only",
+  "val_acc": 0.989,
+  "warm_val": 0.9838,
+  "t": 309.3
+ },
+ {
+  "cell": "warm_cold_random",
+  "val_acc": 0.832,
+  "warm_val": 0.096,
+  "t": 172.2
+ },
+ {
+  "cell": "warm_detector_fold",
+  "val_acc": 0.9792,
+  "warm_val": 0.907,
+  "t": 109.8
+ },
+ {
+  "cell": "mutation_global_sigma",
+  "val_acc": 0.9904,
+  "warm_val": 0.99,
+  "t": 100.2
+ },
+ {
+  "cell": "landscape_fixed_16k",
+  "val_acc": 0.9918,
+  "warm_val": 0.99,
+  "t": 93.3
+ },
+ {
+  "cell": "landscape_pergen_minibatch",
+  "val_acc": 0.9908,
+  "warm_val": 0.99,
+  "t": 171.1
+ },
+ {
+  "cell": "l2_off",
+  "val_acc": 0.9914,
+  "warm_val": 0.99,
+  "t": 121.5
+ },
+ {
+  "cell": "standard_ga_baseline",
+  "val_acc": 0.926,
+  "warm_val": 0.096,
+  "t": 151.8
+ }
+]

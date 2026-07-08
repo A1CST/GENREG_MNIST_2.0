@@ -131,6 +131,30 @@ several hours (the fitness evaluations fall back to numpy automatically).
 
 ![ablations](charts/ablations.png)
 
+Ablation results (validation accuracy, identical environment and generation
+budget unless the cell changes them; seed 7):
+
+| Configuration | Validation | Delta vs shipped |
+|---|---|---|
+| Shipped configuration | 99.22% | — |
+| Built statistics only (no evolved detector bank) | 97.80% | -1.42 |
+| Bank without evolved activation genes (relu only) | 98.90% | -0.32 |
+| Cold random start (no centroid warm start) | 83.20% | -16.02 |
+| Detector-fold warm start | 97.92% | -1.30 |
+| Global-sigma mutation (no magnitude scaling) | 99.04% | -0.18 |
+| Fixed 16k fitness pool (instead of full training set) | 99.18% | -0.04 |
+| Per-generation minibatch fitness | 99.08% | -0.14 |
+| No L2 weight cost | 99.14% | -0.08 |
+| Standard GA baseline (cold start, global sigma, minibatch) | 92.60% | -6.62 |
+
+Two readings of this table. First, the warm start dominates at this budget:
+evolution from a random genome cannot cover the distance in 6,000
+generations, which is why every stage bootstraps from either a data
+statistic or a previously proven genome. Second, with the warm start in
+place, magnitude-scaled mutation accounts for most of the remaining
+evolutionary progress: global-sigma mutation improves on its own warm start
+by only +0.04 where magnitude scaling gains +0.22.
+
 ## Repository layout
 
 ```

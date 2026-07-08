@@ -121,7 +121,7 @@ def ablation_chart(abl):
     ax.set_yticks(ys, [r[0] for r in rows], fontsize=9)
     ax.set_xlim(min(vals) - 0.01, max(vals) + 0.012)
     ax.set_xlabel("validation accuracy (test untouched by ablations)")
-    ax.set_title("Ablations: each row removes or replaces one design decision")
+    ax.set_title("Ablation study (one design decision changed per row)", fontsize=11)
     fig.tight_layout()
     fig.savefig(os.path.join(CH, "ablations.png"))
     plt.close(fig)
