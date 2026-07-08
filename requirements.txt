@@ -1,0 +1,5 @@
+numpy>=1.24
+# optional: GPU-accelerated fitness evaluation (CPU fallback is automatic)
+# torch>=2.0
+# optional: chart generation
+# matplotlib>=3.7

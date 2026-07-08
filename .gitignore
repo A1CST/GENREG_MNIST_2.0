@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+corpora/
+checkpoints/feats_*.npz
