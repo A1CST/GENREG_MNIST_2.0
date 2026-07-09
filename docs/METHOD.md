@@ -1,9 +1,16 @@
 # Method
 
-Every learned parameter in this system is produced by selection. There is no
+Every trainable inference parameter in this system is produced by evolution.
+The environment around those parameters (deskew, pooling, standardization,
+PCA) consists of fixed statistics computed from the training images; the PCA
+projection is fit on training images only and contains no label information,
+and evolution operates entirely after the projection. There is no
 backpropagation, no gradient, and no closed-form fit anywhere in the model.
 (A closed-form logistic regression appears once, as a diagnostic ceiling
-probe; its weights are never used.)
+probe; its weights are never used. The representation-quality probes in
+`scripts/representation_probes.py` use gradient-based readouts as
+diagnostics of the frozen environment; their weights are likewise never part
+of the model.)
 
 ## Data protocol
 

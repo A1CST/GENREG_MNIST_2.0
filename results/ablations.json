@@ -58,5 +58,11 @@
   "val_acc": 0.926,
   "warm_val": 0.096,
   "t": 151.8
+ },
+ {
+  "cell": "no_pca_raw_2327_dims",
+  "val_acc": 0.946,
+  "warm_val": 0.9026,
+  "t": null
  }
 ]

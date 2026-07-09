@@ -1,0 +1,6 @@
+{
+ "evolved_head": 0.9903,
+ "logistic_regression": 0.9864,
+ "linear_svm": 0.9869,
+ "mlp_64": 0.9885
+}
